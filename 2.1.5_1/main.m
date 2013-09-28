@@ -39,12 +39,14 @@ axis([-5,5,-5,5]);
 % axis square
 hold on
 
+% g2=inline('x.^2-sin(x+0.15)');
 g2=inline('x.^2-sin(x+0.15)');
+g2_1=inline('1+sin(x+0.15)/x');
 x=[-5:0.001:5];
 plot(x,g2(x),'r',x,x,'y');
 fprintf('第三个函数的不动点为:  ');
-% [k,p,err,P]=Untitled4(g2,-0.5,0.000001,100);
-[k,p,err,P]=Untitled4(g2,1.5,0.000001,100);
+% [k,p,err,P]=Untitled4(g2_2,-0.5,0.000001,100);
+[k,p,err,P]=Untitled4(g2_1,1.5,0.000001,100);
 
 
 figure(4)
