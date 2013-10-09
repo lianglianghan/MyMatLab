@@ -1,4 +1,4 @@
-%Çó½âº¯ÊýµÄ²»¶¯µã
+%ï¿½ï¿½ï¿½âº¯ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½
 
 function [k,p,err,P]=Untitled4(g,p0,tol,max1)
 
@@ -16,7 +16,7 @@ end
 if k==max1
     disp('maxinum number of iterations exceeded');
 else
-    fprintf('%f\n',p);
+    fprintf('%.12f\n',p);
 end
 
 P=P';
