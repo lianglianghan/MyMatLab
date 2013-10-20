@@ -1,0 +1,5 @@
+function i=Jifen(A,x)
+
+n=length(A);
+
+i=A(n)/5
